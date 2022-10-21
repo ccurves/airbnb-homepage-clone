@@ -12,8 +12,7 @@ import FooterMenu from "./components/FooterMenu";
 import MobileFooter from "./components/MobileFooter";
 import FloatingButton from "./components/FloatingButton";
 
-function App({ setMode, mode }) {
-  console.log(mode, setMode);
+function App() {
   return (
     <>
       <CssBaseline />
