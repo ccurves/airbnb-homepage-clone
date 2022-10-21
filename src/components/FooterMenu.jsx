@@ -27,6 +27,7 @@ const FooterMenu = () => {
         display: "flex",
         justifyContent: "center",
         flexGrow: 1,
+        borderTop: "1px solid rgb(0 0 0 / 8%)",
       }}
     >
       <Stack>
@@ -41,9 +42,9 @@ const FooterMenu = () => {
                 direction="column"
                 spacing={1}
               >
-                <span>{item.icon}</span>
-                <Typography> {item.text}</Typography>
-                {/* <span style={item.active ? { color: "#ff385c" } : {}}>
+                {/* <span>{item.icon}</span>
+                <Typography> {item.text}</Typography> */}
+                <span style={item.active ? { color: "#ff385c" } : {}}>
                   {item.icon}
                 </span>
                 <span
@@ -54,7 +55,7 @@ const FooterMenu = () => {
                   }
                 >
                   <Typography> {item.text}</Typography>
-                </span> */}
+                </span>
               </Stack>
             </Button>
           );
