@@ -17,7 +17,7 @@ const Header = () => {
       sx={{
         ...dFlex,
         minHeight: 70,
-        borderBottom: "1px solid #eee",
+        borderBottom: { xs: "", md: "1px solid #eee" },
       }}
     >
       <Container maxWidth="xl">

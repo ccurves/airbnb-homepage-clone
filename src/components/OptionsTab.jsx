@@ -25,6 +25,7 @@ const OptionsTab = () => {
           alignItems: "center",
           mt: 2,
           mb: 2,
+          borderBottom: { xs: "1px solid rgb(0 0 0 / 8%)", md: "" },
         }}
       >
         <Tabs

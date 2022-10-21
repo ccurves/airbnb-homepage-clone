@@ -62,9 +62,9 @@ const FooterMenu = () => {
             </Button>
           );
         })}
-        <Box>
+        {/* <Box>
           <DarkModeBtn />
-        </Box>
+        </Box> */}
       </Stack>
     </Box>
   );
