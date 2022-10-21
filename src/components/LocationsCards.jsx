@@ -1,13 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import { locations } from "../data/data";
 import CarouselCard from "./CarouselCard";
-import Skeleton from "@mui/material/Skeleton";
 
 const LocationsCards = () => {
   const [loading, setLoading] = React.useState(true);
   const [cards] = React.useState(locations);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setLoading(false);
+    }, 1500);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
   if (!cards.length) {
     return null;
   }
