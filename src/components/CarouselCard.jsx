@@ -61,7 +61,12 @@ const CarouselCard = ({ location, loading }) => {
         >
           {location.locationImages.map((step, index) => {
             return loading ? (
-              <Skeleton variant="rectangular" width="100%" height={200} />
+              <Skeleton
+                variant="rectangular"
+                width="100%"
+                height={200}
+                key={index}
+              />
             ) : (
               <div key={step.id}>
                 <Box

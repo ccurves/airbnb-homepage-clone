@@ -56,7 +56,11 @@ const FooterMenu = ({ setMode, mode }) => {
             >
               {footerMenu.map((item) => {
                 return (
-                  <BottomNavigationAction label={item.text} icon={item.icon} />
+                  <BottomNavigationAction
+                    label={item.text}
+                    icon={item.icon}
+                    key={item.id}
+                  />
                 );
               })}
 

@@ -17,7 +17,14 @@ const footerLinks = [
 
 const MobileFooter = () => {
   return (
-    <Box sx={{ borderTop: "1px solid #ccc", mt: 4, pt: 3, width: "100%" }}>
+    <Box
+      sx={{
+        borderTop: "1px solid #ccc",
+        mt: 4,
+        pt: 3,
+        width: "100%",
+      }}
+    >
       <Paper>
         <Button
           sx={{

@@ -39,7 +39,7 @@ function App() {
             overflowY: "scroll",
           }}
         >
-          <Container maxWidth="xl" sx={{ mb: 3 }}>
+          <Container maxWidth="xl" sx={{ mb: 6 }}>
             <LocationsCards />
             <Box
               sx={{
