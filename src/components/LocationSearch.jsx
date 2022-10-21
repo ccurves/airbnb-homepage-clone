@@ -22,7 +22,7 @@ const LocationSearch = ({ ...theme }) => {
       sx={{
         borderRadius: "40px",
         ml: 15,
-        backgroundColor: "#fff",
+        backgroundColor: "background.default",
         border: "1px solid #ddd",
         boxShadow: "0 1px 2px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 5%);",
         transition: "box-shadow 0.2s ease",

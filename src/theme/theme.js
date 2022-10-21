@@ -1,5 +1,6 @@
 import { createTheme } from "@mui/material/styles";
-import { grey, pink } from "@mui/material/colors";
+
+const mode = localStorage.getItem("mode");
 
 export const theme = createTheme({
   typography: {
@@ -10,8 +11,11 @@ export const theme = createTheme({
     },
   },
   palette: {
+    mode: mode,
     primary: {
       main: "#222",
+      black: "#000",
+      white: "#fff",
     },
     secondary: {
       main: "#ff385c",

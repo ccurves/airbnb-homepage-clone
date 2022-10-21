@@ -5,6 +5,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import { FaSearch, FaRegHeart, FaRegUserCircle } from "react-icons/fa";
 import "../styles/FooterMenu.css";
+import DarkModeBtn from "./DarkModeBtn";
 
 const footerMenu = [
   {
@@ -23,7 +24,13 @@ const footerMenu = [
 
 const FooterMenu = () => {
   return (
-    <Box sx={{ display: "flex", justifyContent: "center", flexGrow: 1 }}>
+    <Box
+      sx={{
+        display: "flex",
+        justifyContent: "center",
+        flexGrow: 1,
+      }}
+    >
       <Stack>
         {footerMenu.map((item) => {
           return (
@@ -55,6 +62,9 @@ const FooterMenu = () => {
             </Button>
           );
         })}
+        <Box>
+          <DarkModeBtn />
+        </Box>
       </Stack>
     </Box>
   );

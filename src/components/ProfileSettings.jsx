@@ -5,17 +5,21 @@ import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
 // react icons
 import { BsGlobe } from "react-icons/bs";
+import { MdDarkMode } from "react-icons/md";
 import { AiOutlineMenu } from "react-icons/ai";
 import { FaRegUserCircle } from "react-icons/fa";
 import { flexCenter } from "../theme/commonStyles";
 
 const ProfileSettings = () => {
   return (
-    <Box sx={flexCenter}>
+    <Box sx={{ ...flexCenter }}>
       <Link href="#"> Become A Host</Link>
-      <Stack spacing={1}>
+      <Stack spacing={0}>
         <Button>
           <BsGlobe size={18} />
+        </Button>
+        <Button>
+          <MdDarkMode size={18} />
         </Button>
         <Button
           sx={{

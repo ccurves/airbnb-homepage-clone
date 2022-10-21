@@ -9,7 +9,6 @@ import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
 import SwipeableViews from "react-swipeable-views";
 
 import { AiFillStar } from "react-icons/ai";
-import { FaRegHeart } from "react-icons/fa";
 import {
   flexBetween,
   dFlex,
@@ -19,6 +18,12 @@ import {
   fixedBottom,
 } from "../theme/commonStyles";
 import "../styles/CarouselCard.css";
+import { Checkbox } from "@mui/material";
+import {
+  Favorite,
+  FavoriteBorder,
+  FavoriteOutlined,
+} from "@mui/icons-material";
 
 const CarouselCard = ({ location }) => {
   const [activeStep, setActiveStep] = React.useState(0);
@@ -45,7 +50,10 @@ const CarouselCard = ({ location }) => {
       }}
     >
       <Box sx={fixedIcon}>
-        <FaRegHeart size={24} color="#fff" />
+        <Checkbox
+          icon={<FavoriteBorder sx={{ color: "primary.white" }} />}
+          checkedIcon={<Favorite sx={{ color: "secondary.main" }} />}
+        />
       </Box>
 
       {location.locationImages.length && (
@@ -74,7 +82,7 @@ const CarouselCard = ({ location }) => {
         <MobileStepper
           sx={{ backgroundColor: "transparent" }}
           steps={maxSteps}
-          position="flex"
+          position="static"
           activeStep={activeStep}
           nextButton={
             <Button

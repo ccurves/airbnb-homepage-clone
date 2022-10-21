@@ -10,8 +10,10 @@ import Footer from "./components/Footer";
 import { displayOnDesktop } from "./theme/commonStyles";
 import FooterMenu from "./components/FooterMenu";
 import MobileFooter from "./components/MobileFooter";
+import FloatingButton from "./components/FloatingButton";
 
-function App() {
+function App({ setMode, mode }) {
+  console.log(mode, setMode);
   return (
     <>
       <CssBaseline />
@@ -46,10 +48,12 @@ function App() {
             </Box>
           </Container>
         </Box>
-        <Box sx={{ display: { xs: "flex", md: "none" } }}>
+
+        <FloatingButton />
+        <Box sx={{ display: { xs: "flex", md: "none" } }} color="text.default">
           <FooterMenu />
         </Box>
-        <Box sx={displayOnDesktop}>
+        <Box sx={displayOnDesktop} color="text.default">
           <Footer />
         </Box>
       </Box>
