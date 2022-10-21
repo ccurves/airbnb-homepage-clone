@@ -18,14 +18,10 @@ import {
   fixedBottom,
 } from "../theme/commonStyles";
 import "../styles/CarouselCard.css";
-import { Checkbox } from "@mui/material";
-import {
-  Favorite,
-  FavoriteBorder,
-  FavoriteOutlined,
-} from "@mui/icons-material";
+import { Checkbox, Skeleton } from "@mui/material";
+import { Favorite, FavoriteBorder } from "@mui/icons-material";
 
-const CarouselCard = ({ location }) => {
+const CarouselCard = ({ location, loading }) => {
   const [activeStep, setActiveStep] = React.useState(0);
 
   const maxSteps = location.locationImages.length;
@@ -64,7 +60,9 @@ const CarouselCard = ({ location }) => {
           enableMouseEvents
         >
           {location.locationImages.map((step, index) => {
-            return (
+            return loading ? (
+              <Skeleton variant="rectangular" width="100%" height={200} />
+            ) : (
               <div key={step.id}>
                 <Box
                   component="img"
@@ -106,44 +104,54 @@ const CarouselCard = ({ location }) => {
           }
         />
       </Box>
+      {loading ? (
+        <Box sx={{ pt: 0.5 }}>
+          <Skeleton />
+          <Skeleton width="60%" />
+          <Skeleton width="60%" />
+        </Box>
+      ) : (
+        <Box sx={flexBetween}>
+          <Box sx={{ mt: 2 }}>
+            <Typography component="h3" sx={{ fontWeight: "bold" }}>
+              {location.location}
+            </Typography>
+            <Box sx={flexBetween}>
+              <Typography component="h4" sx={{ padding: 0 }}>
+                <span style={{ textTransform: "none" }}>Hosted by</span>{" "}
+                {location.host}
+              </Typography>
+            </Box>
 
-      <Box sx={flexBetween}>
-        <Box sx={{ mt: 2 }}>
-          <Typography component="h3" sx={{ fontWeight: "bold" }}>
-            {location.location}
-          </Typography>
-          <Box sx={flexBetween} style={{ gap: "5px" }}>
             <Typography component="h4" sx={{ padding: 0 }}>
               {" "}
-              {`Hosted by ${location.host}`}
+              {location.days}
+            </Typography>
+            <Typography
+              component="h5"
+              sx={{ textTransform: "none", padding: 0 }}
+            >
+              {" "}
+              <strong> {location.price}</strong> night
             </Typography>
           </Box>
-
-          <Typography component="h4" sx={{ padding: 0 }}>
-            {" "}
-            {location.days}
-          </Typography>
-          <Typography component="h5" sx={{ fontWeight: "bold", padding: 0 }}>
-            {" "}
-            {location.price}
-          </Typography>
-        </Box>
-        <Box sx={{ mt: 2 }}>
-          <Box sx={dFlex}>
-            {location.isNew ? (
-              <React.Fragment>
-                <Typography component="h5">New</Typography>
-                <AiFillStar size={18} />
-              </React.Fragment>
-            ) : (
-              <React.Fragment>
-                <Typography component="h5"> {location.rating}</Typography>
-                <AiFillStar size={18} />
-              </React.Fragment>
-            )}
+          <Box sx={{ mt: 2 }}>
+            <Box sx={dFlex}>
+              {location.isNew ? (
+                <React.Fragment>
+                  <Typography component="h5">New</Typography>
+                  <AiFillStar size={18} />
+                </React.Fragment>
+              ) : (
+                <React.Fragment>
+                  <Typography component="h5"> {location.rating}</Typography>
+                  <AiFillStar size={18} />
+                </React.Fragment>
+              )}
+            </Box>
           </Box>
         </Box>
-      </Box>
+      )}
     </Box>
   );
 };

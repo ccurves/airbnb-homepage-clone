@@ -5,7 +5,7 @@ import IconButton from "@mui/material/IconButton";
 import { FaSearch } from "react-icons/fa";
 import { VscSettings } from "react-icons/vsc";
 
-const MobileSearch = () => {
+const MobileSearch = ({ mode }) => {
   return (
     <Paper
       component="form"
@@ -13,9 +13,12 @@ const MobileSearch = () => {
         p: "2px 4px",
         display: "flex",
         alignItems: "center",
-        width: 400,
+        width: "100%",
         border: "0.5px solid rgba(0,0,0,0.08)",
-        boxShadow: "0 3px 10px rgb(0 0 0 / 10%)",
+        boxShadow:
+          mode === "light"
+            ? "0 3px 10px rgb(0 0 0 / 10%)"
+            : "0 3px 10px rgb(0 0 0 / 25%)",
         transition: "translate3d(0,0,0)",
         borderRadius: "40px",
       }}
@@ -25,8 +28,8 @@ const MobileSearch = () => {
       </IconButton>
       <InputBase sx={{ ml: 1, flex: 1 }} placeholder="Where to?" />
       <IconButton type="submit" sx={{ p: "10px" }}>
-        {/* <VscSettings /> */}
-        <svg
+        <VscSettings />
+        {/* <svg
           viewBox="0 0 16 16"
           xmlns="http://www.w3.org/2000/svg"
           aria-hidden="true"
@@ -35,7 +38,7 @@ const MobileSearch = () => {
           style={{ display: "block", height: "16px", fill: "rgb(34, 34, 34)" }}
         >
           <path d="M5 8c1.306 0 2.418.835 2.83 2H14v2H7.829A3.001 3.001 0 1 1 5 8zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm6-8a3 3 0 1 1-2.829 4H2V4h6.17A3.001 3.001 0 0 1 11 2zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"></path>
-        </svg>
+        </svg> */}
       </IconButton>
     </Paper>
   );

@@ -65,10 +65,10 @@ export const locations = [
         url: "https://images.unsplash.com/photo-1629447236132-22c57cd0f0bf?auto=format&fit=crop&w=400&h=250&q=60",
       },
     ],
-    location: "Gardon Reveira, Italy",
+    location: "Lagos, Nigeria",
     host: "Daniel",
     days: "Oct 2-9",
-    price: "$14,999 CAD night",
+    price: "$14",
     isNew: true,
     rating: 4.5,
   },
@@ -92,10 +92,10 @@ export const locations = [
         url: "https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=400&h=250&q=60",
       },
     ],
-    location: "Joshua tree, USA",
+    location: "Lagos, Nigeria",
     host: "John",
     days: "Sep 2-11",
-    price: "$3000 CAD night",
+    price: "$30",
     isNew: false,
     rating: 4.99,
   },
@@ -119,10 +119,10 @@ export const locations = [
         url: "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=400&h=250&q=60",
       },
     ],
-    location: "Uvita rosa, Costa Rica",
+    location: "Lekki, Nigeria",
     host: "Stephn",
     days: "Nov 19-22",
-    price: "$1,129 CAD night",
+    price: "$112",
     isNew: true,
     rating: 4.6,
   },
@@ -146,10 +146,10 @@ export const locations = [
         url: "https://images.unsplash.com/photo-1505144808419-1957a94ca61e?auto=format&fit=crop&w=400&h=250&q=60",
       },
     ],
-    location: "Navidad, Chile",
+    location: "Lagos, Nigeria",
     host: "Jane",
     days: "Sep 13-18",
-    price: "$208 CAD night",
+    price: "$208",
     isNew: false,
     rating: 4.2,
   },
@@ -158,7 +158,7 @@ export const locations = [
     locationImages: [
       {
         id: 1,
-        url: "https://images.unsplash.com/photo-1647891940243-77a6483a152e?auto=format&fit=crop&w=400&h=250&q=60",
+        url: "https://a0.muscache.com/im/pictures/d8361943-c93f-43b7-8a99-15296f54e33e.jpg?im_w=720",
       },
       {
         id: 2,
@@ -173,10 +173,10 @@ export const locations = [
         url: "https://images.unsplash.com/photo-1587502537815-0c8b5c9ba39a?auto=format&fit=crop&w=400&h=250&q=60",
       },
     ],
-    location: "Paraty, Brazil",
+    location: "Lagos, Nigeria",
     host: "Bella",
     days: "Aug 1-6",
-    price: "$243 CAD night",
+    price: "$24",
     isNew: true,
     rating: 4.1,
   },
@@ -185,7 +185,7 @@ export const locations = [
     locationImages: [
       {
         id: 1,
-        url: "https://images.unsplash.com/photo-1505765050516-f72dcac9c60e?auto=format&fit=crop&w=400&h=250&q=60",
+        url: "https://a0.muscache.com/im/pictures/miso/Hosting-53626803/original/8690b32c-b495-4c9d-b0ec-8a27bee4f9c4.jpeg?im_w=720",
       },
       {
         id: 2,
@@ -200,10 +200,10 @@ export const locations = [
         url: "https://images.unsplash.com/photo-1503614472-8c93d56e92ce?auto=format&fit=crop&w=400&h=250&q=60",
       },
     ],
-    location: "Raelington, Norway",
+    location: "Lekki, Nigeria",
     host: "Austin",
     days: "Oct 9-15",
-    price: "$698 CAD night",
+    price: "$69",
     isNew: false,
     rating: 4.6,
   },
@@ -212,7 +212,7 @@ export const locations = [
     locationImages: [
       {
         id: 1,
-        url: "https://images.unsplash.com/photo-1504567961542-e24d9439a724?auto=format&fit=crop&w=400&h=250&q=60",
+        url: "https://a0.muscache.com/im/pictures/48953786-650e-42e9-b157-637c94f4ce74.jpg?im_w=720",
       },
       {
         id: 2,
@@ -227,10 +227,10 @@ export const locations = [
         url: "https://images.unsplash.com/photo-1462216589242-9e3e00a47a48?auto=format&fit=crop&w=400&h=250&q=60",
       },
     ],
-    location: "Terrasini, Italy",
+    location: "Lagos, Nigeria",
     host: "Joy",
     days: "June 7-12",
-    price: "$467 CAD night",
+    price: "$46",
     isNew: true,
     rating: 4.7,
   },
@@ -239,7 +239,7 @@ export const locations = [
     locationImages: [
       {
         id: 1,
-        url: "https://images.unsplash.com/photo-1523528283115-9bf9b1699245?auto=format&fit=crop&w=400&h=250&q=60",
+        url: "https://a0.muscache.com/im/pictures/29f9f479-443d-43c2-a4c6-8a866fda5cff.jpg?im_w=720",
       },
       {
         id: 2,
@@ -254,10 +254,10 @@ export const locations = [
         url: "https://images.unsplash.com/photo-1504392022767-a8fc0771f239?auto=format&fit=crop&w=400&h=250&q=60",
       },
     ],
-    location: "San Jose, Mexico",
+    location: "Lekki, Nigeria",
     host: "Anna",
     days: "Jun 11-16",
-    price: "$1,767 CAD night",
+    price: "$176",
     isNew: false,
     rating: 4.8,
   },
@@ -266,7 +266,7 @@ export const locations = [
     locationImages: [
       {
         id: 1,
-        url: "https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?auto=format&fit=crop&w=400&h=250&q=60",
+        url: "https://a0.muscache.com/im/pictures/897635b8-0762-4c57-ad13-c244b138c933.jpg?im_w=720",
       },
       {
         id: 2,
@@ -281,10 +281,10 @@ export const locations = [
         url: "https://images.unsplash.com/photo-1486912500284-6f2462ba07ea?auto=format&fit=crop&w=400&h=250&q=60",
       },
     ],
-    location: "Tulum, Mexico",
+    location: "Lagos, Nigeria",
     host: "Jude",
     days: "Jul 1-6",
-    price: "$910 CAD night",
+    price: "$91",
     isNew: true,
     rating: 4.3,
   },
@@ -293,7 +293,7 @@ export const locations = [
     locationImages: [
       {
         id: 1,
-        url: "https://images.unsplash.com/photo-1518593929011-2b5ef6be57c7?auto=format&fit=crop&w=400&h=250&q=60",
+        url: "https://a0.muscache.com/im/pictures/b41b36b1-2d45-4ae3-9100-0b84d64139b1.jpg?im_w=720",
       },
       {
         id: 2,
@@ -308,10 +308,10 @@ export const locations = [
         url: "https://images.unsplash.com/photo-1476209446441-5ad72f223207?auto=format&fit=crop&w=400&h=250&q=60",
       },
     ],
-    location: "Inglis, Canada",
+    location: "Ikeja, Nigeria",
     host: "Chuks",
     days: "Jun 12-18",
-    price: "$629 CAD night",
+    price: "$62",
     isNew: false,
     rating: 4.6,
   },
@@ -320,7 +320,7 @@ export const locations = [
     locationImages: [
       {
         id: 1,
-        url: "https://images.unsplash.com/photo-1458966480358-a0ac42de0a7a?auto=format&fit=crop&w=400&h=250&q=60",
+        url: "https://a0.muscache.com/im/pictures/6010c570-7a2c-4500-ab65-b88d70005409.jpg?im_w=720",
       },
       {
         id: 2,
@@ -335,10 +335,10 @@ export const locations = [
         url: "https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?auto=format&fit=crop&w=400&h=250&q=60",
       },
     ],
-    location: "Jenner, California",
+    location: "Lekki, Nigeria",
     host: "Johnson",
     days: "Nov 2-7",
-    price: "$2,595 CAD night",
+    price: "$25",
     isNew: false,
     rating: 4.1,
   },
@@ -347,7 +347,7 @@ export const locations = [
     locationImages: [
       {
         id: 1,
-        url: "https://images.unsplash.com/photo-1526336179256-1347bdb255ee?auto=format&fit=crop&w=400&h=250&q=60",
+        url: "https://a0.muscache.com/im/pictures/0f41e893-7328-422c-b7f9-e51fc7e60385.jpg?im_w=720",
       },
       {
         id: 2,
@@ -362,10 +362,10 @@ export const locations = [
         url: "https://images.unsplash.com/photo-1564415637254-92c66292cd64?auto=format&fit=crop&w=400&h=250&q=60",
       },
     ],
-    location: "Malibu, US",
+    location: "Lagos, Nigeria",
     host: "Aishat",
     days: "Jun 3-4",
-    price: "$4,467 CAD night",
+    price: "$44",
     isNew: false,
     rating: 4.2,
   },
@@ -374,7 +374,7 @@ export const locations = [
     locationImages: [
       {
         id: 1,
-        url: "https://images.unsplash.com/photo-1470240731273-7821a6eeb6bd?auto=format&fit=crop&w=400&h=250&q=60",
+        url: "https://a0.muscache.com/im/pictures/baa03d2c-35b3-4239-924f-3e4a8af1851f.jpg?im_w=720",
       },
       {
         id: 2,
@@ -389,10 +389,10 @@ export const locations = [
         url: "https://images.unsplash.com/photo-1497449493050-aad1e7cad165?auto=format&fit=crop&w=400&h=250&q=60",
       },
     ],
-    location: "Bolzano, Italy",
+    location: "Lagos, Nigeria",
     host: "Ebele",
     days: "Sep 22-25",
-    price: "$358 CAD night",
+    price: "$35",
     isNew: true,
     rating: 4.5,
   },
@@ -401,7 +401,7 @@ export const locations = [
     locationImages: [
       {
         id: 1,
-        url: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=400&h=250&q=60",
+        url: "https://a0.muscache.com/im/pictures/miso/Hosting-637394718682457659/original/a7e82a6f-4eab-4aa0-bb81-350a32355f66.jpeg",
       },
       {
         id: 2,
@@ -416,10 +416,10 @@ export const locations = [
         url: "https://images.unsplash.com/photo-1533387520709-752d83de3630?auto=format&fit=crop&w=400&h=250&q=60",
       },
     ],
-    location: "Hawaii, US",
+    location: "Ikeja, Nigeria",
     host: "Mariam",
     days: "Nov 4-10",
-    price: "$777 CAD night",
+    price: "$77",
     isNew: true,
     rating: 4.8,
   },
@@ -428,7 +428,7 @@ export const locations = [
     locationImages: [
       {
         id: 1,
-        url: "https://images.unsplash.com/photo-1542856391-010fb87dcfed?auto=format&fit=crop&w=400&h=250&q=60",
+        url: "https://a0.muscache.com/im/pictures/c138f25c-a63b-4a2a-bb45-014707dfb761.jpg?im_w=720",
       },
       {
         id: 2,
@@ -443,10 +443,10 @@ export const locations = [
         url: "https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9?auto=format&fit=crop&w=400&h=250&q=60",
       },
     ],
-    location: "Lagos, Portugal",
+    location: "Lagos, Nigeria",
     host: "Dumebi",
     days: "Sep 25-Oct 2",
-    price: "$2,999 CAD night",
+    price: "$29",
     isNew: true,
     rating: 4.88,
   },
@@ -455,7 +455,7 @@ export const locations = [
     locationImages: [
       {
         id: 1,
-        url: "https://images.unsplash.com/photo-1504870712357-65ea720d6078?auto=format&fit=crop&w=400&h=250&q=60",
+        url: "https://a0.muscache.com/im/pictures/f5a66989-851b-41a7-8a86-47d37d551cf0.jpg?im_w=720",
       },
       {
         id: 2,
@@ -470,10 +470,10 @@ export const locations = [
         url: "https://images.unsplash.com/photo-1495571758719-6ec1e876d6ae?auto=format&fit=crop&w=400&h=250&q=60",
       },
     ],
-    location: "LunenBurg, Canada",
+    location: "Lagos, Nigeria",
     host: "Chika",
     days: "Oct 4-9",
-    price: "$500 CAD night",
+    price: "$50",
     isNew: false,
     rating: 4.2,
   },
@@ -482,7 +482,7 @@ export const locations = [
     locationImages: [
       {
         id: 1,
-        url: "https://images.unsplash.com/photo-1503435824048-a799a3a84bf7?auto=format&fit=crop&w=400&h=250&q=60",
+        url: "https://a0.muscache.com/im/pictures/6e2923e8-60e1-459e-9bbd-1a37d2464326.jpg?im_w=720",
       },
       {
         id: 2,
@@ -497,10 +497,10 @@ export const locations = [
         url: "https://images.unsplash.com/photo-1528184039930-bd03972bd974?auto=format&fit=crop&w=400&h=250&q=60",
       },
     ],
-    location: "Santa Rosa, US",
+    location: "Lekki, Nigeria",
     host: "Emeka",
     days: "Jun 2-9",
-    price: "$3,369 CAD night",
+    price: "$336",
     isNew: false,
     rating: 4.1,
   },
@@ -509,7 +509,7 @@ export const locations = [
     locationImages: [
       {
         id: 1,
-        url: "https://images.unsplash.com/photo-1465147264724-326b45c3c59b?auto=format&fit=crop&w=400&h=250&q=60",
+        url: "https://a0.muscache.com/im/pictures/miso/Hosting-622546558689586782/original/56b926d4-09fb-444a-bf3c-4f63731252fc.jpeg?im_w=720",
       },
       {
         id: 2,
@@ -524,10 +524,10 @@ export const locations = [
         url: "https://images.unsplash.com/photo-1562095241-8c6714fd4178?auto=format&fit=crop&w=400&h=250&q=60",
       },
     ],
-    location: "Carlux, France",
+    location: "Lagos, Nigeria",
     host: "Femi",
     days: "Oct 28-Nov 4",
-    price: "$2511 CAD night",
+    price: "$25",
     isNew: true,
     rating: 4.5,
   },
@@ -536,7 +536,7 @@ export const locations = [
     locationImages: [
       {
         id: 1,
-        url: "https://images.unsplash.com/photo-1501786223405-6d024d7c3b8d?auto=format&fit=crop&w=400&h=250&q=60",
+        url: "https://a0.muscache.com/im/pictures/da38e6f6-8baf-4960-95da-f60858b15700.jpg?im_w=720",
       },
       {
         id: 2,
@@ -551,10 +551,10 @@ export const locations = [
         url: "https://images.unsplash.com/photo-1519378058457-4c29a0a2efac?auto=format&fit=crop&w=400&h=250&q=60",
       },
     ],
-    location: "Palm desert, US",
+    location: "Lagos, Nigeria",
     host: "Bolu",
     days: "Jun 11-16",
-    price: "$3200 CAD night",
+    price: "$32",
     isNew: true,
     rating: 4.7,
   },
@@ -563,7 +563,7 @@ export const locations = [
     locationImages: [
       {
         id: 1,
-        url: "https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?auto=format&fit=crop&w=400&h=250&q=60",
+        url: "https://a0.muscache.com/im/pictures/15242fb8-a0df-42fa-a366-acf13ea3ee9a.jpg?im_w=720",
       },
       {
         id: 2,
@@ -578,7 +578,7 @@ export const locations = [
         url: "https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?auto=format&fit=crop&w=400&h=250&q=60",
       },
     ],
-    location: "Ressaca, Brazil",
+    location: "Ikeja, Nigeria",
     host: "Sherif",
     days: "Oct 2-9",
     price: "$14,999 CAD night",

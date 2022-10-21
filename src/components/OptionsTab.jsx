@@ -54,7 +54,7 @@ const OptionsTab = () => {
             borderRadius: 2,
             textTransform: "capitalize",
             py: 1,
-            color: "theme.palette.text.primary",
+            color: (theme) => `${theme.palette.text.primary} `,
           }}
         >
           <FaFilter /> Filters

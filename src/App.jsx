@@ -11,10 +11,13 @@ import { displayOnDesktop } from "./theme/commonStyles";
 import FooterMenu from "./components/FooterMenu";
 import MobileFooter from "./components/MobileFooter";
 import FloatingButton from "./components/FloatingButton";
+import AppThemeProvider from "./theme/AppThemeProvider";
+import { useState } from "react";
 
 function App() {
+  const [mode, setMode] = useState("light");
   return (
-    <>
+    <AppThemeProvider mode={mode}>
       <CssBaseline />
       <Box
         sx={{
@@ -24,7 +27,7 @@ function App() {
         }}
       >
         <Box>
-          <Header />
+          <Header setMode={setMode} mode={mode} />
           <OptionsTab />
         </Box>
         <Box
@@ -40,7 +43,7 @@ function App() {
             <LocationsCards />
             <Box
               sx={{
-                display: { xs: "flex", md: "none" },
+                display: { xs: "flex", md: "none", bottom: 0 },
               }}
             >
               <MobileFooter />
@@ -50,14 +53,24 @@ function App() {
         <Box>
           <FloatingButton />
         </Box>
-        <Box sx={{ display: { xs: "flex", md: "none" } }} color="text.default">
-          <FooterMenu />
+        <Box
+          sx={{
+            display: { xs: "flex", md: "none" },
+          }}
+        >
+          <FooterMenu setMode={setMode} mode={mode} />
         </Box>
-        <Box sx={displayOnDesktop} color="text.default">
+        <Box
+          sx={{
+            ...displayOnDesktop,
+            color: (theme) => `${theme.palette.text.primary} !important`,
+          }}
+          color="text.default"
+        >
           <Footer />
         </Box>
       </Box>
-    </>
+    </AppThemeProvider>
   );
 }
 

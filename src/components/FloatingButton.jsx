@@ -1,8 +1,7 @@
-import { Map, MapRounded } from "@mui/icons-material";
-import { Fab, Stack } from "@mui/material";
+import { MapRounded } from "@mui/icons-material";
+import { Fab } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
-import { fixedIcon } from "../theme/commonStyles";
 
 const FloatingButton = () => {
   return (

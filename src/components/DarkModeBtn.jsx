@@ -2,16 +2,16 @@ import { Brightness4, DarkMode } from "@mui/icons-material";
 import { Checkbox } from "@mui/material";
 import React from "react";
 
-const DarkModeBtn = () => {
-  const lmode = localStorage.getItem("mode");
+const DarkModeBtn = ({ setMode, mode }) => {
   return (
     <>
       <Checkbox
         onChange={() => {
-          localStorage.setItem("mode", lmode === "light" ? "dark" : "light");
+          setMode(mode === "light" ? "dark" : "light");
         }}
-        icon={<DarkMode />}
-        checkedIcon={<Brightness4 sx={{ color: "primary" }} />}
+        checked={mode === "dark" ? true : false}
+        icon={<DarkMode sx={{ color: "secondary.main" }} />}
+        checkedIcon={<Brightness4 sx={{ color: "secondary.main" }} />}
       />
     </>
   );

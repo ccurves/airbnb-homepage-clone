@@ -19,26 +19,53 @@ const MobileFooter = () => {
   return (
     <Box sx={{ borderTop: "1px solid #ccc", mt: 4, pt: 3, width: "100%" }}>
       <Paper>
-        <Button>
+        <Button
+          sx={{
+            color: (theme) => `${theme.palette.text.primary} `,
+          }}
+        >
           <Box sx={{ ...justifyCenter, mr: 1 }}>
             <BsGlobe size={18} />
           </Box>
           English ( US )
         </Button>
 
-        <Button> $ CAD </Button>
+        <Button
+          sx={{
+            color: (theme) => `${theme.palette.text.primary} `,
+          }}
+        >
+          {" "}
+          $ CAD{" "}
+        </Button>
       </Paper>
 
       <Stack sx={{ mt: 2 }}>
         <Paper>
-          <Link href="#"> © 2022 Airbnb, Inc</Link>
+          <Link
+            href="#"
+            sx={{
+              color: (theme) => `${theme.palette.text.primary} `,
+            }}
+          >
+            {" "}
+            © 2022 Airbnb, Inc
+          </Link>
         </Paper>
       </Stack>
       <Stack sx={{ mt: 2 }}>
         {footerLinks.map((link) => {
           return (
             <Paper key={link.id}>
-              <Link href={link.url}> {link.text}</Link>
+              <Link
+                href={link.url}
+                sx={{
+                  color: (theme) => `${theme.palette.text.primary} `,
+                }}
+              >
+                {" "}
+                {link.text}
+              </Link>
             </Paper>
           );
         })}

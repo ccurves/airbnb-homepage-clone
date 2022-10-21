@@ -11,7 +11,7 @@ import LocationSearch from "./LocationSearch";
 import ProfileSettings from "./ProfileSettings";
 import MobileSearch from "./MobileSearch";
 
-const Header = () => {
+const Header = ({ setMode, mode }) => {
   return (
     <Box
       sx={{
@@ -35,10 +35,12 @@ const Header = () => {
             <LocationSearch />
           </Box>
           <Box sx={displayOnDesktop}>
-            <ProfileSettings />
+            <ProfileSettings setMode={setMode} mode={mode} />
           </Box>
           <Box sx={{ display: { xs: "flex", md: "none" } }}>
-            <MobileSearch />
+            <Box sx={{ width: "100%", padding: "10px" }}>
+              <MobileSearch mode={mode} />
+            </Box>
           </Box>
         </Box>
       </Container>

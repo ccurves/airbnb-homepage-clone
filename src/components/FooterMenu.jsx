@@ -1,69 +1,70 @@
 import React from "react";
 import Stack from "@mui/material/Stack";
-import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
-import { FaSearch, FaRegHeart, FaRegUserCircle } from "react-icons/fa";
+import DarkModeBtn from "./DarkModeBtn";
+import { BottomNavigation, BottomNavigationAction, Paper } from "@mui/material";
+import { AccountCircle, Favorite, Search } from "@mui/icons-material";
 
 const footerMenu = [
   {
     id: 1,
     text: "Explore",
-    icon: <FaSearch size={24} className="icon" />,
+    icon: <Search size={18} className="icon" />,
     active: true,
   },
-  { id: 2, text: "Wishlist", icon: <FaRegHeart size={24} className="icon" /> },
+  { id: 2, text: "Wishlist", icon: <Favorite size={18} className="icon" /> },
   {
     id: 3,
     text: "Login",
-    icon: <FaRegUserCircle size={24} className="icon" />,
+    icon: <AccountCircle size={24} className="icon" />,
   },
 ];
 
-const FooterMenu = () => {
+const FooterMenu = ({ setMode, mode }) => {
+  const [value, setValue] = React.useState(0);
   return (
     <Box
       sx={{
         display: "flex",
         justifyContent: "center",
+        alignContent: "center",
         flexGrow: 1,
         borderTop: "1px solid rgb(0 0 0 / 8%)",
+        zIndex: 20,
       }}
     >
-      <Stack>
-        {footerMenu.map((item) => {
-          return (
-            <Button key={item.id}>
-              <Stack
-                sx={{
-                  justifyContent: "center",
-                  alignItems: "center",
-                }}
-                direction="column"
-                spacing={1}
-              >
-                {/* <span>{item.icon}</span>
-                <Typography> {item.text}</Typography> */}
-                <span style={item.active ? { color: "#ff385c" } : {}}>
-                  {item.icon}
-                </span>
-                <span
-                  style={
-                    item.active
-                      ? { fontWeight: "bold", marginTop: "0px" }
-                      : { marginTop: "0px" }
-                  }
-                >
-                  <Typography> {item.text}</Typography>
-                </span>
-              </Stack>
-            </Button>
-          );
-        })}
-        {/* <Box>
-          <DarkModeBtn />
-        </Box> */}
-      </Stack>
+      <Box>
+        <Stack>
+          <Paper
+            sx={{ position: "fixed", bottom: 0, left: 0, right: 0 }}
+            elevation={3}
+          >
+            <BottomNavigation
+              showLabels
+              value={value}
+              onChange={(event, newValue) => {
+                setValue(newValue);
+              }}
+              sx={{
+                "& .Mui-selected": {
+                  "& .MuiSvgIcon-root, & .MuiBottomNavigationAction-label": {
+                    color: (theme) => theme.palette.secondary.main,
+                  },
+                },
+                padding: "14px",
+              }}
+            >
+              {footerMenu.map((item) => {
+                return (
+                  <BottomNavigationAction label={item.text} icon={item.icon} />
+                );
+              })}
+
+              <DarkModeBtn setMode={setMode} mode={mode} />
+            </BottomNavigation>
+          </Paper>
+        </Stack>
+      </Box>
     </Box>
   );
 };

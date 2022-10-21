@@ -38,12 +38,28 @@ const Footer = () => {
         >
           <Stack>
             <Paper>
-              <Link href="#"> © 2022 Airbnb, Inc </Link>
+              <Link
+                href="#"
+                sx={{
+                  color: (theme) => `${theme.palette.text.primary} `,
+                }}
+              >
+                {" "}
+                © 2022 Airbnb, Inc{" "}
+              </Link>
             </Paper>
             {footerLinks.map((link) => {
               return (
                 <Paper key={link.id}>
-                  <Link href={link.url}> {link.text}</Link>
+                  <Link
+                    href={link.url}
+                    sx={{
+                      color: (theme) => `${theme.palette.text.primary} `,
+                    }}
+                  >
+                    {" "}
+                    {link.text}
+                  </Link>
                 </Paper>
               );
             })}
@@ -51,14 +67,34 @@ const Footer = () => {
 
           <Stack>
             <Paper sx={justifyCenter}>
-              <Button>
-                <Box sx={{ ...justifyCenter, mr: 1 }}>
+              <Button
+                sx={{
+                  color: (theme) => `${theme.palette.text.primary} `,
+                }}
+              >
+                <Box
+                  sx={{
+                    ...justifyCenter,
+                    mr: 1,
+                  }}
+                >
                   <BsGlobe size={18} />
                 </Box>
                 English (US)
               </Button>
-              <Button> $USD </Button>
-              <Button>
+              <Button
+                sx={{
+                  color: (theme) => `${theme.palette.text.primary} `,
+                }}
+              >
+                {" "}
+                $USD{" "}
+              </Button>
+              <Button
+                sx={{
+                  color: (theme) => `${theme.palette.text.primary} `,
+                }}
+              >
                 Support & Resources
                 <Box sx={{ ...justifyCenter, ml: 1 }}>
                   <IoChevronUpOutline size={18} />

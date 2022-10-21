@@ -56,6 +56,9 @@ export const theme = createTheme({
         size: "small",
         p: 0,
         disableRipple: true,
+        sx: {
+          color: (theme) => theme.palette.text.primary,
+        },
       },
       variant: "text",
     },
