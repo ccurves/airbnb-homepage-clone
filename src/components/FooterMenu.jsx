@@ -5,7 +5,6 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import { FaSearch, FaRegHeart, FaRegUserCircle } from "react-icons/fa";
 import "../styles/FooterMenu.css";
-import DarkModeBtn from "./DarkModeBtn";
 
 const footerMenu = [
   {

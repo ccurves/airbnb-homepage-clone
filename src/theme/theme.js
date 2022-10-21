@@ -1,7 +1,5 @@
 import { createTheme } from "@mui/material/styles";
 
-const mode = localStorage.getItem("mode");
-
 export const theme = createTheme({
   typography: {
     allVariants: {
@@ -11,7 +9,6 @@ export const theme = createTheme({
     },
   },
   palette: {
-    mode: mode,
     primary: {
       main: "#222",
       black: "#000",
