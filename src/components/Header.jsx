@@ -38,7 +38,7 @@ const Header = ({ setMode, mode }) => {
             <ProfileSettings setMode={setMode} mode={mode} />
           </Box>
           <Box sx={{ display: { xs: "flex", md: "none" } }}>
-            <Box sx={{ width: "100%", padding: "10px" }}>
+            <Box sx={{ width: "100vw", padding: "10px" }}>
               <MobileSearch mode={mode} />
             </Box>
           </Box>
