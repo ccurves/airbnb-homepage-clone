@@ -4,7 +4,6 @@ import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import { FaSearch, FaRegHeart, FaRegUserCircle } from "react-icons/fa";
-import "../styles/FooterMenu.css";
 
 const footerMenu = [
   {
@@ -41,11 +40,10 @@ const FooterMenu = () => {
                 }}
                 direction="column"
                 spacing={1}
-                // className={item.active ? "active" : ""}
               >
-                {/* <span>{item.icon}</span>
-                <Typography> {item.text}</Typography> */}
-                <span style={item.active ? { color: "#ff385c" } : {}}>
+                <span>{item.icon}</span>
+                <Typography> {item.text}</Typography>
+                {/* <span style={item.active ? { color: "#ff385c" } : {}}>
                   {item.icon}
                 </span>
                 <span
@@ -56,7 +54,7 @@ const FooterMenu = () => {
                   }
                 >
                   <Typography> {item.text}</Typography>
-                </span>
+                </span> */}
               </Stack>
             </Button>
           );

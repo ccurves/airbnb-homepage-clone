@@ -48,7 +48,7 @@ function App() {
           </Container>
         </Box>
 
-        {/* <FloatingButton /> */}
+        <FloatingButton />
         <Box sx={{ display: { xs: "flex", md: "none" } }} color="text.default">
           <FooterMenu />
         </Box>
