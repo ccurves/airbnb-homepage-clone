@@ -68,6 +68,11 @@ const AppThemeProvider = (prop) => {
           disableRipple: true,
         },
       },
+      MuiBottomNavigationAction: {
+        defaultProps: {
+          disableRipple: true,
+        },
+      },
     },
   });
   return <ThemeProvider theme={theme}> {prop.children} </ThemeProvider>;

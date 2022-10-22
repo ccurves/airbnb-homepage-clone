@@ -581,7 +581,7 @@ export const locations = [
     location: "Ikeja, Nigeria",
     host: "Sherif",
     days: "Oct 2-9",
-    price: "$14,999 CAD night",
+    price: "$149",
     isNew: false,
     rating: 4.5,
   },
